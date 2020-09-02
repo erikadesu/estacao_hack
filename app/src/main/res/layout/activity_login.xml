@@ -19,40 +19,41 @@
         app:srcCompat="@drawable/cellep_tech" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/edtLoginEmail"
         android:layout_width="347dp"
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
-        android:background="@color/colorBackground"
-        android:backgroundTint="@color/colorBackground"
+        android:background="#2E418F"
+        android:backgroundTint="#8555639E"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
         android:textColorHint="#D0FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edtLoginPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edtLoginPassword"
         android:layout_width="347dp"
         android:layout_height="40dp"
         android:layout_marginTop="32dp"
         android:background="@color/colorBackground"
-        android:backgroundTint="@color/colorBackground"
+        android:backgroundTint="#8555639E"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:textColorHint="#D0FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btnLoginSignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginEmail" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnLoginSignIn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -61,13 +62,14 @@
         android:layout_marginBottom="32dp"
         android:background="@color/colorPrimary"
         android:text="Sign In"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnLoginSignUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/edtLoginPassword" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnLoginSignUp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -75,9 +77,10 @@
         android:layout_marginEnd="100dp"
         android:background="@color/colorAccent"
         android:text="Sign Up"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginSignIn" />
 
     <ImageView
         android:id="@+id/imageView5"

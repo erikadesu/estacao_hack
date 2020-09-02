@@ -4,9 +4,9 @@
 
     <!-- solicitando permissao pra acessar a internet -->
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <!-- o android:usesCleartextTraffic permite app entrar em site sem https -->
     <application
-        android:usesCleartextTraffic="true" <!-- permite app entrar em site sem https -->
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
