@@ -40,7 +40,7 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(this, "Fill in all fields", Toast.LENGTH_LONG)
             } else {
                 //getSharedPreferences gera um arquivo xml - nao colocar chars especiais
-                val sharedPrefs = getSharedPreferences("signUp_$email", Context.MODE_PRIVATE ) // cria arquivo
+                val sharedPrefs = getSharedPreferences("sign_up_$email", Context.MODE_PRIVATE ) // cria arquivo
                 //editar o arquivo
                 val editPrefs = sharedPrefs.edit()
                 //preparando dados a serem salvos
@@ -48,6 +48,7 @@ class SignUpActivity : AppCompatActivity() {
                 editPrefs.putString("LAST_NAME", lastName)
                 editPrefs.putString("EMAIL", email)
                 editPrefs.putString("GENDER", gender)
+                editPrefs.putString("PASSWORD", password)
 
                 editPrefs.apply() //salva dados no arquivo shared preferences
                 val mIntent = Intent(this, MainActivity::class.java)

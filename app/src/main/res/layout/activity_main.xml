@@ -35,8 +35,8 @@
 
     <TextView
         android:id="@+id/txvMainEmail"
-        android:layout_width="24dp"
-        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Email"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/txvMainGender"
